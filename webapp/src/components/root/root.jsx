@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Modal} from 'react-bootstrap';
-import {CirclePicker} from 'react-color';
+import {TwitterPicker} from 'react-color';
 
 import ReactPaint from '../paint';
 
@@ -202,15 +202,15 @@ export default class Root extends React.Component {
                     </h4>
                 </Modal.Header>
                 <Modal.Body>
-                    <CirclePicker
+                    <TwitterPicker
                         styles={{default: {card: {justifyContent: 'space-between'}}}}
                         color={this.state.brushColor}
                         onChangeComplete={this.setColor}
-                        circleSize={20}
-                        circleSpacing={0}
+                        //circleSize={20}
+                        //circleSpacing={0}
                         width={this.isSmall() ? window.innerWidth - 30 : 850}
                         colors={[
-                            '#000000', '#f44336', '#e91e63', '#9c27b0',
+                            '#FFFFFF', '#000000', '#f44336', '#e91e63', '#9c27b0',
                             '#673ab7', '#3f51b5', '#2196f3', '#03a9f4',
                             '#00bcd4', '#009688', '#4caf50', '#8bc34a',
                             '#cddc39', '#ffeb3b', '#ffc107', '#ff9800',
